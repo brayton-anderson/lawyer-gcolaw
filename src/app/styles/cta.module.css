@@ -1,0 +1,277 @@
+/* cta */
+
+.cta {
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(rgba(19, 18, 18, 0.702), rgba(19, 18, 18, 0.7)), url("/assets/cta1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.cta h2 {
+    text-align: center;
+    padding-top: 100px;
+    margin-left: 300px;
+    font-weight: 600;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.ctaButtons {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.ctaButtons .read_btn1 {
+    margin-right: 15px;
+    margin-left: 300px;
+}
+
+.ctaButtons .read_btn1 a,
+.ctaButtons .read_btn2 a {
+    padding: 12px 32px;
+    /* border-rasdius: 21px; */
+    text-decoration: none;
+    background-color: #b6a16a;
+    /* margin-left: 40%; */
+    font-size: 13px;
+    color: #fff;
+    /* border: 1px solid #fff; */
+    font-weight: 600;
+    transition: .4s ease-in-out;
+}
+
+.ctaButtons .read_btn2 {
+    margin-left: 15px;
+}
+
+
+/* last cta section  */
+
+.lastCTA {
+    /* background-color: #131212; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+}
+
+.lastCTA .heading {
+    color: #131212;
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    /* padding: 30px; */
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ctaLeft {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.ctaLeft h4 {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.ctaLeft p {
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.ctaRight {
+    width: 50%;
+}
+
+.formContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.formContent label {
+    font-size: 13px;
+}
+
+.formContent .card1,
+.formContent .card2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.formContent .card1:nth-child(2n),
+.formContent .card2:nth-child(2n) {
+    justify-content: end;
+}
+
+.card1 label,
+.card2 label,
+.insert label {
+    width: 95%;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.card1 .perinput,
+.card2 .perinput2 {
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.card1 .perinput:is(:focus,
+ :valid),
+.card2 .perinput2:is(:focus,
+ :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .insert label {
+    padding-right: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.insert .dis {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+} */
+
+.insert {
+    width: 100%;
+}
+
+.insert textarea {
+    border-radius: 5px;
+    font-size: 13px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    padding: 10px 10px;
+}
+
+.herobtn {
+    background-color: #fff;
+    padding: 8px 40px;
+    outline: none;
+    border: 1px solid #b6a16a;
+    font-weight: 600;
+    font-size: 13px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.herobtn:hover {
+    background-color: #b6a16a;
+    color: #fff;
+}
+
+@media (max-width:992px) {
+    /* CTA 1 */
+    .cta h2 {
+        font-size: 22px;
+        margin-left: 180px;
+    }
+    .ctaButtons .read_btn1 {
+        margin-left: 80px;
+    }
+    .ctaButtons .read_btn1 a,
+    .ctaButtons .read_btn2 a {
+        font-size: 12px;
+    }
+    /* CTA 2 & FORM */
+    .lastCTA {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 50px;
+    }
+    .lastCTA .heading {
+        font-size: 22px;
+    }
+    .ctaLeft h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .ctaLeft p,
+    .card1 .perinput,
+    .card2 .perinput2,
+    .insert textarea,
+    .herobtn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* cta with btns */
+    .cta h2 {
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        font-size: 17px;
+    }
+    .ctaButtons {
+        display: block;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+    .ctaButtons .read_btn1 {
+        margin-right: 15px;
+        margin-left: 110px;
+    }
+    .ctaButtons .read_btn1 a,
+    .ctaButtons .read_btn2 a {
+        border-radius: 8px;
+        font-size: 12px;
+    }
+    .ctaButtons .read_btn2 {
+        margin-left: 118px;
+        padding-top: 50px;
+    }
+    /* last cta */
+    .lastCTA {
+        /* background-color: #131212; */
+        padding: 50px 20px;
+    }
+    .ctaLeft {
+        width: 100%;
+        padding-right: 0;
+    }
+    .ctaRight {
+        width: 100%;
+    }
+    .lastCTA .heading {
+        font-size: 22px;
+    }
+    .ctaLeft h4 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .ctaLeft p,
+    .card1 .perinput,
+    .card2 .perinput2,
+    .insert textarea,
+    .herobtn {
+        font-size: 12px;
+    }
+}

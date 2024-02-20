@@ -1,0 +1,347 @@
+.section1 {
+    /* display: flex; */
+    height: 50vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.702), rgba(4, 9, 30, 0.7)), url("/assets/bpbm.jpg");
+    /* background: linear-gradient(45deg, hsla(26, 89%, 54%, 0.363), hsla(242, 100%, 15%, 0.363)); */
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    position: absolute;
+    /* text-align: center; */
+    margin-left: 550px;
+    margin-top: 190px;
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+}
+
+.content h5 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 18px;
+    margin-left: 600px;
+}
+
+.content h2 {
+    text-align: center;
+    /* padding: 50px 0; */
+    padding-top: 10px;
+    font-size: 25px;
+    color: #b6a16a;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+    margin-left: 500px;
+}
+
+
+/* .content h2 span {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 600;
+} */
+
+.wrapperAbout {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 50px 100px; */
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContent {
+    width: 50%;
+    border-top: 3px solid #b6a16a;
+}
+
+.leftContent .text {
+    margin-top: 30px;
+    /* text-align: justify; */
+    font-weight: bold;
+}
+
+.leftContent p {
+    text-align: justify;
+    font-size: 13px;
+}
+
+.rightContent {
+    width: 50%;
+}
+
+.rightContent .picAbout {
+    position: relative;
+    padding-left: 180px;
+}
+
+.rightContent .card {
+    position: absolute;
+    margin: 20px;
+    width: 250px;
+    color: #131212;
+    background-color: #b6a16a;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: -180px;
+    margin-left: 70px;
+    padding: 15px 15px;
+}
+
+.rightContent .card p {
+    padding: 50px 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.rightContent .card p span {
+    font-size: 19px;
+}
+
+
+/* section belieffs */
+
+.beilefs {
+    background-color: #131212;
+    align-items: center;
+    justify-content: center;
+}
+
+.beilefs h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+    /* color: #b6a16a; */
+    color: whitesmoke;
+}
+
+.beilefsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+}
+
+.bw1 {
+    width: calc(33.3% - 20px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 40px;
+    animation: jumping 4s infinite linear;
+}
+
+@keyframes jumping {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bw1:nth-child(1) {
+    animation-delay: 1.2s;
+}
+
+.bw1:nth-child(2) {
+    animation-delay: .3s;
+}
+
+.bw1:nth-child(3) {
+    animation-delay: 2.2s;
+}
+
+
+/* 
+.bw11 {
+    padding-bottom: 50px;
+} */
+
+.bw1 i,
+.bw11 i {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #b6a16a;
+}
+
+.bw1 h5,
+.bw11 h5 {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.bw1 p,
+.bw11 p {
+    font-size: 13px;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+@media (max-width:992px) {
+    .section1 h1 {
+        font-size: 22px;
+        margin-left: 350px;
+    }
+    .content h5 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 16px;
+        margin-left: 440px;
+    }
+    .content h2 {
+        font-size: 20px;
+        margin-left: 360px;
+    }
+    .wrapperAbout {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .leftContent {
+        border-top: 3px solid #b6a16a;
+    }
+    .leftContent .text {
+        margin-top: 30px;
+        /* text-align: justify; */
+        font-weight: bold;
+    }
+    .leftContent p {
+        font-size: 12px;
+    }
+    .rightContent .picAbout {
+        position: relative;
+        padding-left: 120px;
+    }
+    .rightContent .card {
+        width: 180px;
+        margin-top: -110px;
+        margin-left: 50px;
+    }
+    .rightContent .card p {
+        padding: 40px 0;
+        font-size: 13px;
+        font-style: italic;
+    }
+    .rightContent .card p span {
+        font-size: 16px;
+    }
+    /* section belieffs */
+    .beilefs h2 {
+        font-size: 22px;
+    }
+    .beilefsWrapper {
+        padding: 50px 50px;
+    }
+    .bw1,
+    .bw11 {
+        padding: 20px;
+    }
+    .bw1 i,
+    .bw11 i {
+        font-size: 30px;
+    }
+    .bw1 h5,
+    .bw11 h5 {
+        font-size: 15px;
+    }
+    .bw1 p,
+    .bw11 p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section1 {
+        height: 30vh;
+        background-position: top;
+    }
+    .section1 h1 {
+        font-size: 20px;
+        margin-left: 120px;
+        margin-top: 100px;
+    }
+    .content h5 {
+        font-size: 15px;
+        padding-top: 50px;
+        margin-left: 140px;
+    }
+    .content h2 {
+        font-size: 18px;
+        margin-left: 60px;
+    }
+    .wrapperAbout {
+        padding-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .leftContent {
+        width: 100%;
+        border-top: 3px solid #b6a16a;
+    }
+    .rightContent {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .leftContent p {
+        font-size: 12px;
+    }
+    .rightContent .picAbout {
+        position: relative;
+        padding-left: 70px;
+    }
+    .rightContent .card {
+        width: 160px;
+        margin-top: -110px;
+        margin-left: 0;
+    }
+    .rightContent .card p {
+        padding: 20px 0;
+        font-size: 13px;
+        font-style: italic;
+    }
+    /* section belieffs */
+    .beilefsWrapper {
+        padding: 50px 20px;
+    }
+    .bw1,
+    .bw11 {
+        width: 100%;
+    }
+    .beilefs h2 {
+        font-size: 20px;
+    }
+    .beilefsWrapper {
+        padding: 50px 20px;
+    }
+    .bw1,
+    .bw11 {
+        padding: 20px;
+    }
+    .bw1 i,
+    .bw11 i {
+        font-size: 30px;
+    }
+    .bw1 h5,
+    .bw11 h5 {
+        font-size: 15px;
+    }
+    .bw1 p,
+    .bw11 p {
+        font-size: 12px;
+    }
+}

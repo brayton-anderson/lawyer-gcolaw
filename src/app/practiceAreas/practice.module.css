@@ -1,0 +1,124 @@
+.section1 {
+    /* display: flex; */
+    height: 50vh;
+    background: linear-gradient(rgba(18, 17, 17, 0.702), rgba(18, 17, 17, 0.7)), url("/assets/scale.jpg");
+    /* background: linear-gradient(45deg, hsla(26, 89%, 54%, 0.363), hsla(242, 100%, 15%, 0.363)); */
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    position: absolute;
+    /* text-align: center; */
+    margin-left: 500px;
+    margin-top: 190px;
+}
+
+.reasonSection {
+    background-color: #121111;
+}
+
+.reasonSection h2 {
+    color: whitesmoke;
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.reasonWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px 0; */
+}
+
+.reasonBox {
+    width: 350px;
+    /* background-color: #ffffff;*/
+    border: 1px solid rgba(245, 245, 245, 0.37);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 6px;
+    padding: 15px 15px;
+}
+
+.reasonImage i {
+    font-size: 40px;
+    color: #b6a16a;
+}
+
+.reasonText {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reasonTitle {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.reasonTitle:hover {
+    color: #b6a16a;
+}
+
+.reasonText p {
+    color: whitesmoke;
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0;
+}
+
+.reasonText a {
+    color: #b6a16a;
+    font-size: 13px;
+}
+
+.reasonText a:hover {
+    color: #b6a16a;
+    transition: all ease .3s;
+}
+
+@media (max-width:992px) {
+    .section1 h1 {
+        font-size: 22px;
+        margin-left: 350px;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section1 {
+        height: 30vh;
+        background-position: top;
+    }
+    .section1 h1 {
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    .reasonWrapper {
+        padding: 50px 20px;
+    }
+    .reasonBox {
+        width: 100%;
+        margin-left: -5px;
+    }
+}

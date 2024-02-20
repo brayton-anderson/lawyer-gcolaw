@@ -1,0 +1,34 @@
+{
+    "name": "gakunju",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "NODE_ENV=production node server.js",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@react-email/render": "^0.0.12",
+        "eslint-config-next": "^14.1.0",
+        "framer-motion": "^10.16.1",
+        "lucide-react": "^0.330.0",
+        "next": "^13.4.13",
+        "nodemailer": "^6.9.8",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hook-form": "^7.49.3",
+        "react-icons": "^5.0.1",
+        "react-intersection-observer": "^9.5.3",
+        "react-scroll": "^1.9.0",
+        "react-slick": "^0.29.0",
+        "reactstrap": "^9.2.0",
+        "slick-carousel": "^1.8.1",
+        "zod": "^3.22.4"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.16",
+        "@types/react": "^18.2.54",
+        "typescript": "^5.3.3"
+    }
+}

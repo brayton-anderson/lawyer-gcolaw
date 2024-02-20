@@ -1,0 +1,109 @@
+.section1 {
+    /* display: flex; */
+    height: 50vh;
+    background: linear-gradient(rgba(18, 17, 17, 0.702), rgba(18, 17, 17, 0.7)), url("/assets/office.jpg");
+    /* background: linear-gradient(45deg, hsla(26, 89%, 54%, 0.363), hsla(242, 100%, 15%, 0.363)); */
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+    position: absolute;
+    /* text-align: center; */
+    margin-left: 550px;
+    margin-top: 190px;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    /* background-color: #b6a16a1e; */
+    /* background-color: #131212; */
+    background: linear-gradient(rgba(18, 17, 17, 0.702), rgba(18, 17, 17, 0.7)), url("/assets/bgi.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+.wrapper h2 {
+    /* color: whitesmoke; */
+    display: inline-block;
+    position: relative;
+    font-style: italic;
+    font-size: 25px;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    margin-left: 300px;
+}
+
+.card {
+    width: 350px;
+    /* background-color: #ffffff;*/
+    /* border: 1px solid rgba(245, 245, 245, 0.37); */
+    border: 1px solid #b6a16a42;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 15px 15px;
+}
+
+.card h4 {
+    font-size: 18px;
+    color: #b6a16a;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 13px;
+}
+
+@media (max-width: 992px) {
+    .section1 h1 {
+        font-size: 22px;
+        margin-left: 400px;
+        margin-top: 200px;
+    }
+    /* SECTION LOCATIONS */
+    .locations {
+        padding: 50px 50px;
+    }
+    .wrapper h2 {
+        font-size: 22px;
+    }
+    .card h4 {
+        font-size: 17px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:576px) {
+    .section1 {
+        height: 30vh;
+        background-position: top;
+    }
+    .section1 h1 {
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    .wrapper h2 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+}
